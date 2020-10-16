@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Mulish";
+  src: url(Fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(Fonts/Lato/Lato-Regular.ttf)
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+​
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+​
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+​
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+​
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+​
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+​
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+​
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#experience {
+  height: 1000px;
+}
+/*
+
+
+li {
+  display: inline;
+  float: left;
+  display: block;
+  width: 70px;
+}
+*/
+
+.nav-bar-option-text, .nav-bar-name-text, .footer-link {
+  text-decoration: none;
+}
+.nav-bar-option-text, .footer-link, .subsection, .intro-header-text, .intro-basic-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  
+}
+
+/* nav bar things */
+.nav-bar {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 60px;
+  z-index: 0;
+
+  /* Light / Divider */
+  border: 1px solid #E2E5E6;
+}
+
+.nav-bar-right-side {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+
+.nav-bar-right-side-options, .nav-bar-option-text {
+  padding-right: 25px;
+
+  /* Subtitle 2 - semibold 14 (18, 0.2px) */
+  font-weight: 600;
+  font-size: 14px;
+
+  /* identical to box height, or 129% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+
+  /* Light / Black */
+  color: #373F41;
+
+  /* Inside Auto Layout */
+  order: 0;
+  height: 32px;
+}
+
+.nav-bar-option-name, .nav-bar-name-text {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  
+  position: absolute;
+  height: 32px;
+ 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'lato';
+
+  /* identical to box height, or 133% */
+
+  align-items: center;
+  
+  letter-spacing: 0.2px;
+  /*text-transform: uppercase;*/
+
+  /* Accent / Default */
+  
+  color: #3C64B1;
+}
+
+.subsection {
+  padding-left: 120px;
+}
+
+.subsection-header {
+  color: #3C64B1;
+}
+
+/* intro things */
+.intro {
+  padding-top: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.intro-icon {
+  width: 175px;
+  height: 158px;
+  
+}
+
+.intro-header-text {
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: -0.01em;
+  color: #373F41;
+}
+
+.intro-header-name {
+  color: #3C64B1;
+}
+
+.intro-text-box {
+  width: 333px;
+}
+
+
+
+#about-me {
+  padding-top: 152px;
+}
+
+/* footer things */
+#footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  font-family: 'Mulish';
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer-icon{
+  height: 44px;
+  width: 44px;
+}
