@@ -70,22 +70,18 @@ select {
   font: inherit;
 }
 
+
+
+
+/*
 #experience {
   height: 1000px;
-}
-/*
-
-
-li {
-  display: inline;
-  float: left;
-  display: block;
-  width: 70px;
 }
 */
 
 .nav-bar-option-text, .nav-bar-name-text, .footer-link {
   text-decoration: none;
+  color: #3C64B1;
 }
 .nav-bar-option-text, .footer-link, .subsection, .intro-header-text, .intro-basic-text {
   font-family: 'Mulish';
@@ -135,6 +131,7 @@ li {
 }
 
 .nav-bar-option-name, .nav-bar-name-text {
+  /*part 1*/
   display: flex;
   list-style: none;
   justify-content: flex-start;
@@ -142,6 +139,8 @@ li {
   
   position: absolute;
   height: 32px;
+
+  /*part2*/
  
   font-style: normal;
   font-weight: bold;
@@ -149,24 +148,30 @@ li {
   line-height: 32px;
   font-family: 'lato';
 
-  /* identical to box height, or 133% */
-
   align-items: center;
   
   letter-spacing: 0.2px;
-  /*text-transform: uppercase;*/
-
-  /* Accent / Default */
-  
   color: #3C64B1;
 }
 
-.subsection {
-  padding-left: 120px;
+.full-layout {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 80%;
 }
+
+
+.subsection {
+  padding-top: 75px;
+}
+
+
 
 .subsection-header {
   color: #3C64B1;
+  font-size: 30px;
 }
 
 /* intro things */
@@ -178,8 +183,8 @@ li {
 }
 
 .intro-icon {
-  width: 175px;
-  height: 158px;
+  width: 200px;
+  height: 200px;
   
 }
 
@@ -202,6 +207,46 @@ li {
 
 #about-me {
   padding-top: 152px;
+}
+
+.about-me-overlay {
+  padding-top: 53px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me-skills {
+  display: flex;
+  padding-top: 75px;
+  justify-content: space-evenly;
+}
+
+.about-me-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.about-me-text-general {
+  width: 80%;
+  font-size: 24px;
+}
+
+.about-me-text {
+  padding-top: 53px;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: -4%;
+}
+
+.about-me-text-subsection {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+h4 {
+  padding-top: 29px;
+  padding-bottom: 12px;
 }
 
 /* footer things */
