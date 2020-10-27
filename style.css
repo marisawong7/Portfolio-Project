@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 @font-face {
   font-family: "Mulish";
   src: url(Fonts/Mulish/Mulish-VariableFont_wght.ttf);
@@ -72,18 +76,11 @@ select {
 
 
 
-
-/*
-#experience {
-  height: 1000px;
-}
-*/
-
 .nav-bar-option-text, .nav-bar-name-text, .footer-link {
   text-decoration: none;
   color: #3C64B1;
 }
-.nav-bar-option-text, .footer-link, .subsection, .intro-header-text, .intro-basic-text {
+.nav-bar-option-text, .footer-link, .subsection, .intro-header-text, .intro-basic-text, .intro-and-project-basic-text {
   font-family: 'Mulish';
   font-style: normal;
   
@@ -92,15 +89,14 @@ select {
 /* nav bar things */
 .nav-bar {
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  height: 60px;
+  left: 0rem;
+  right: 0rem;
+  top: 0rem;
+  bottom: 0rem;
+  height: 6rem;
   z-index: 0;
 
-  /* Light / Divider */
-  border: 1px solid #E2E5E6;
+  border: 0.1px solid #E2E5E6;
 }
 
 .nav-bar-right-side {
@@ -111,23 +107,18 @@ select {
 
 
 .nav-bar-right-side-options, .nav-bar-option-text {
-  padding-right: 25px;
+  padding-right: 2.5rem;
 
-  /* Subtitle 2 - semibold 14 (18, 0.2px) */
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
 
-  /* identical to box height, or 129% */
   display: flex;
   align-items: center;
-  letter-spacing: 0.2px;
 
-  /* Light / Black */
   color: #373F41;
 
-  /* Inside Auto Layout */
   order: 0;
-  height: 32px;
+  height: 3.2rem;
 }
 
 .nav-bar-option-name, .nav-bar-name-text {
@@ -138,19 +129,19 @@ select {
   align-items: center;
   
   position: absolute;
-  height: 32px;
+  height: 3.2rem;
 
   /*part2*/
  
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   font-family: 'lato';
 
   align-items: center;
   
-  letter-spacing: 0.2px;
+  letter-spacing: 0.02rem;
   color: #3C64B1;
 }
 
@@ -164,33 +155,33 @@ select {
 
 
 .subsection {
-  padding-top: 75px;
+  padding-top: 7.5rem;
 }
 
 
 
 .subsection-header {
   color: #3C64B1;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 /* intro things */
 .intro {
-  padding-top: 158px;
+  padding-top: 15.8rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .intro-icon {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
   
 }
 
 .intro-header-text {
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 3rem;
+  line-height: 4.2rem;
   color: #373F41;
 }
 
@@ -198,18 +189,22 @@ select {
   color: #3C64B1;
 }
 
+.intro-and-project-basic-text, h4 {
+  font-size: 1.6rem;
+}
+
 .intro-text-box {
-  width: 333px;
+  width: 33.3rem;
 }
 
 
 
 #about-me {
-  padding-top: 152px;
+  padding-top: 15.2rem;
 }
 
 .about-me-overlay {
-  padding-top: 53px;
+  padding-top: 5.3rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -217,7 +212,7 @@ select {
 
 .three-column-format {
   display: flex;
-  padding-top: 75px;
+  padding-top: 7.5rem;
   justify-content: space-evenly;
 }
 
@@ -229,38 +224,52 @@ select {
 }
 .about-me-text-general {
   width: 80%;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .about-me-text {
-  padding-top: 53px;
-  font-size: 30px;
-  line-height: 42px;
+  padding-top: 5.3rem;
+  font-size: 3rem;
+  line-height: 4.2rem;
   letter-spacing: -4%;
 }
 
 .subsection-description-small-text {
-  font-size: 14px;
-  letter-spacing: 0.2px;
+  font-size: 1.4rem;
+  letter-spacing: 0.02rem;
 }
 
 h4 {
-  padding-top: 29px;
-  padding-bottom: 12px;
+  padding-top: 2.9rem;
+  padding-bottom: 1.2rem;
 }
 
 .experiences-image-size {
-  width: 255px;
-  height: 255px;
+  width: 25.5rem;
+  height: 25.5rem;
 }
-/*
-.experience-column-container-spacing {
+
+.projects-general-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-subsection { 
   display: flex;
   align-items: center;
-  width: 80%;
-
+  justify-content: space-evenly;
 }
-*/
+
+.project-section-image-side-image {
+  width: 45.4rem;
+  height: 29rem;
+}
+
+.project-section-text-side {
+  width: 33rem;
+}
 
 /* footer things */
 #footer {
@@ -269,13 +278,13 @@ h4 {
   flex-direction: column;
   
   font-family: 'Mulish';
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
 }
 
 .footer-icon{
-  height: 44px;
-  width: 44px;
+  height: 4.4rem;
+  width: 4.4rem;
 }
