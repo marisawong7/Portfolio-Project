@@ -76,7 +76,8 @@ select {
 
 
 
-.nav-bar-option-text, .nav-bar-name-text, .footer-link {
+
+.nav-bar-option-text, .nav-bar-name-text, .footer-link, .projects-github-icon-text {
   text-decoration: none;
   color: #3C64B1;
 }
@@ -85,6 +86,22 @@ select {
   font-style: normal;
   
 }
+
+
+.hamburger {
+  display: none;
+  background-color:white;
+  border: none;
+  color: #3c64b1;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-bottom: 3.8rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 4rem;
+}
+
+
 
 /* nav bar things */
 .nav-bar {
@@ -150,8 +167,15 @@ select {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 80%;
+  
 }
+/* width: 80%;*/
+
+#about-me, #projects, #experience, #contact {
+  width: 80%;
+  margin:auto;
+}
+
 
 
 .subsection {
@@ -217,6 +241,7 @@ select {
 }
 
 .three-column-format-category {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,6 +275,7 @@ h4 {
 }
 
 .projects-general-container {
+  padding-top: 0.7rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -260,6 +286,8 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 6.7rem;
+  padding-bottom: 6.7rem;
 }
 
 .project-section-image-side-image {
@@ -268,8 +296,102 @@ h4 {
 }
 
 .project-section-text-side {
-  width: 33rem;
+  width: 30%;
 }
+
+.project-subsection-subtitle {
+  font-family: 'Mulish';
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.project-basic-text {
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.projects-github-icon {
+  width: 1.4rem;
+  height: 1.362rem;
+}
+.projects-github-icon-text {
+  padding-top: 7.719rem;
+  font-size: 1.2rem;
+  color: #373F41;
+}
+
+.project-smaller-explanation-text {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #979797;
+}
+
+.contact-me-section-background {
+  background-color: #3C64B1;
+}
+
+
+.contact-me-name-field, .contact-me-email-field {
+  width: 23.7rem;
+  height: 4rem;
+  font-family: 'Mulish';
+}
+/*
+.contact-me-name-box {
+  padding-right: 1rem;
+}
+
+.contact-me-email-box {
+  padding-left: 1rem;
+}
+*/
+.experiences-contact-me-padding {
+  padding-bottom: 6.7rem;
+}
+
+.contact-me-name {
+  padding-top: 3.6rem;
+}
+
+.contact-me-message-field {
+  width: 49.4rem;
+  height: 7.2rem;
+}
+
+.contact-me-message-box {
+  padding-top: 2.6rem;
+}
+
+.contact-me-info-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-me-text-box-holder {
+  display: flex;
+  justify-content: flex-end;  
+}
+  
+.love-to-chat {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4.8rem;
+  line-height: 8rem;
+  color: white;
+  width: 20.5rem;
+  height: 16rem;
+}
+
+.contact-me-text-and-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 6.1rem;
+  padding-bottom: 10.7rem;
+}
+
+
 
 /* footer things */
 #footer {
@@ -288,3 +410,156 @@ h4 {
   height: 4.4rem;
   width: 4.4rem;
 }
+
+hr {
+  width: 90%;
+  border: 0.15rem solid #CBCBCB;
+}
+.white-text {
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .three-column-format {
+    padding-top: 0rem;
+  }
+  
+  .three-column-format {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .three-column-format-category {
+    padding-top: 5rem;
+    width: 50%;
+  }
+  
+  .subsection {
+    padding-top: 7rem;
+  }
+
+  .project-subsection {
+    flex-direction: column-reverse;
+  }
+
+  .project-section-text-side {
+    width: 80%
+  }
+
+  .project-subsection-subtitle {
+    padding-top: 2.9rem;
+  }
+
+  .projects-github-icon-text {
+    padding-top: 1.8rem;
+  }
+
+  .project-basic-text {
+    padding-top: 1.9rem;
+  }
+
+  #experience {
+    padding-top: 0rem;
+  }
+
+  .contact-me-text-and-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-me-text-box-holder {
+    padding-top: 4.4rem;
+  }
+  
+  .contact-me-info-fields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .contact-me-name-field, .contact-me-email-field, .contact-me-message-field {
+    width: 40rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  
+    #about-me {
+      padding-top: 12rem;
+    }
+  
+    .about-me-text-general {
+      font-size: 1.4rem;
+    }
+  
+    .intro {
+      flex-direction: column;
+    }
+  
+    .intro-text-box {
+      padding-top: 3.4rem;
+      width: 60%;
+    }
+    
+  }
+  
+  /*
+  @media screen and (max-width: 600px) {
+    .hamburger{
+      display: block;
+    }
+    .nav-bar {
+      height: 60px;
+    }
+    .nav-bar ul{
+      position: absolute;
+      width: 100%;
+      height: 200px; 
+      left: 0;
+      top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    
+    .nav-bar-right-side {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .nav-bar-option-text {
+      overflow: hidden;
+    }
+
+
+    .nav-bar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .nav-bar ul li a {
+      padding: 25px;
+    }
+    .nav-bar  ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+  }
+  */
+  
+  
+
+  @media only screen and (max-width: 550px) {
+    .project-section-image-side-image {
+      width: 23.3rem;
+      height: 15rem;
+    }
+  }
+
+  
